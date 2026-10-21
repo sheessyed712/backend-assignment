@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Message Board</h1>
+
+    <section>
+      <h2>All Messages</h2>
+      <p id="status">Loading messages...</p>
+      <div id="messages"></div>
+    </section>
+
+    <section>
+      <h2>Add New Message</h2>
+
+      <form id="messageForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" maxlength="100" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"
+          rows="5" maxlength="5000" required></textarea>
+
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
